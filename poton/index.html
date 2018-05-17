@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/share.css">
+    <script src="./js/jquery-1.4.2.min.js"></script>
 </head>
+
 <body>
-    
+    <div class="header" style="position:fixed; top:0; z-index: 999;">
+        <div></div>
+        <script>
+            $(document).ready(function() {
+                $("#menu1 a").each(function() {
+                    var linkText = $(this).find("div").html();
+                });
+                $("#menu1 a").hover(function(){
+                    $(this).find("p").stop().animate({
+                        marginTop:"-20"
+                    }, 200);
+                },function(){
+                    $(this).find("p").stop().animate({
+                        marginTop:"0"
+                    }, 200);
+                });
+            });
+        </script>
+        <div class="M-nav" id="menu1">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div style="margin-top: 0px;">
+                            <p style="margin-top: 0px;" >
+                                <span>HOME</span>
+                                <font>首页</font>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="margin-top: 0px;">
+                            <p style="margin-top: 0px;">
+                                <span>ABOUT</span>
+                                关于
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="margin-top: 0px;">
+                            <p style="margin-top: 0px;">
+                                <span>CASE</span>
+                                案例
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="margin-top: 0px;">
+                            <p style="margin-top: 0px;">
+                                <span>BUSINESSY</span>
+                                业务体系
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="margin-top: 0px;">
+                            <p style="margin-top: 0px;">
+                                <span>NEWS</span>
+                                新闻
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div style="margin-top: 0px;">
+                            <p style="margin-top: 0px;">
+                                <span>CONTACT</span>
+                                联系我们
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
