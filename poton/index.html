@@ -10,88 +10,98 @@
     <script src="./js/jquery-1.4.2.min.js"></script>
 </head>
 
-<body>
+<body id="home">
     <div class="header" style="position:fixed; top:0; z-index: 999;">
-        <div></div>
-        <script>
-            $(document).ready(function() {
-                $("#menu1 a").each(function() {
-                    var linkText = $(this).find("div").html();
+        <div class="head">
+            <div class="logo"><img src="./images/798204154177179299.png" width="144px" height="36px" alt=""></div>
+            <script>
+                $(document).ready(function () {
+                    $("#menu1 a").each(function () {
+                        var linkText = $(this).find("div").html();
+                    });
+                    $("#menu1 a").hover(function () {
+                        $(this).find("p").stop().animate({
+                            marginTop: "-20"
+                        }, 200);
+                    }, function () {
+                        $(this).find("p").stop().animate({
+                            marginTop: "0"
+                        }, 200);
+                    });
                 });
-                $("#menu1 a").hover(function(){
-                    $(this).find("p").stop().animate({
-                        marginTop:"-20"
-                    }, 200);
-                },function(){
-                    $(this).find("p").stop().animate({
-                        marginTop:"0"
-                    }, 200);
-                });
-            });
-        </script>
-        <div class="M-nav" id="menu1">
-            <ul>
-                <li>
-                    <a href="#">
-                        <div style="margin-top: 0px;">
-                            <p style="margin-top: 0px;" >
-                                <span>HOME</span>
-                                <font>首页</font>
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div style="margin-top: 0px;">
-                            <p style="margin-top: 0px;">
-                                <span>ABOUT</span>
-                                关于
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div style="margin-top: 0px;">
-                            <p style="margin-top: 0px;">
-                                <span>CASE</span>
-                                案例
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div style="margin-top: 0px;">
-                            <p style="margin-top: 0px;">
-                                <span>BUSINESSY</span>
-                                业务体系
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div style="margin-top: 0px;">
-                            <p style="margin-top: 0px;">
-                                <span>NEWS</span>
-                                新闻
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div style="margin-top: 0px;">
-                            <p style="margin-top: 0px;">
-                                <span>CONTACT</span>
-                                联系我们
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            </script>
+            <div class="M-nav" id="menu1">
+                <ul>
+                    <li>
+                        <a href="#" class="cur">
+                            <div style="margin-top: 0px;">
+                                <p style="margin-top: 0px;">
+                                    <span>HOME</span>
+                                    <font>首页</font>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div style="margin-top: 0px;">
+                                <p style="margin-top: 0px;">
+                                    <span>ABOUT</span>
+                                    关于
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div style="margin-top: 0px;">
+                                <p style="margin-top: 0px;">
+                                    <span>CASE</span>
+                                    案例
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div style="margin-top: 0px;">
+                                <p style="margin-top: 0px;">
+                                    <span>BUSINESSY</span>
+                                    业务体系
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div style="margin-top: 0px;">
+                                <p style="margin-top: 0px;">
+                                    <span>NEWS</span>
+                                    新闻
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div style="margin-top: 0px;">
+                                <p style="margin-top: 0px;">
+                                    <span>CONTACT</span>
+                                    联系我们
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pbone-number"><span>023-63870557</span></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div>
+                <p><img src="./images/banner-dsd.jpg" width="100%" height="900px" alt=""></p>
+            </div>
         </div>
     </div>
 </body>
